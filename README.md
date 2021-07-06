@@ -29,7 +29,7 @@ The configuration details of each machine may be found below.
 | Jump Box | Gateway     | 10.0.0.4   | Linux            |
 | DVWA 1   | Web Server  | 10.0.0.5   | Linux            |
 | DVWA 2   | Web Server  | 10.0.0.6   | Linux            |
-| ELK      | Monitoring  | 10.0.0.8   | Linux            |
+| ELK      | Monitoring  | 10.1.0.4   | Linux            |
 
 In addition to the above, Azure has provisioned a **load balancer** in front of all machines except for the jump box. The load balancer's targets are organized into the following availability zones:
 - **Availability Zone 1**: DVWA 1 + DVWA 2
@@ -46,8 +46,7 @@ To use this playbook, one must log into the Jump Box, then issue: `ansible-playb
 ### Access Policies
 The machines on the internal network are _not_ exposed to the public Internet. 
 
-Only the **jump box** machine can accept connections from the Internet. Access to this machine is only allowed from the IP address `64.72.118.76`
-- **Note**: _Your answer will be different!_
+Only the **jump box** machine can accept connections from the Internet. Access to this machine is only allowed from the IP address `40.77.0.47`
 
 Machines _within_ the network can only be accessed by **each other**. The DVWA 1 and DVWA 2 VMs send traffic to the ELK server.
 
@@ -55,19 +54,22 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 | 64.72.118.76         |
-| ELK      | No                  | 10.0.0.1-254         |
-| DVWA 1   | No                  | 10.0.0.1-254         |
-| DVWA 2   | No                  | 10.0.0.1-254         |
+| Jump Box | Yes                 | 40.77.0.47           |
+| ELK      | No                  | 10.1.0.4-254         |
+| DVWA 1   | No                  | 10.0.0.5-254         |
+| DVWA 2   | No                  | 10.0.0.6-254         |
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because this allows to automate daily tasks, which in turn helps deliver mor value to the buisness by spending time on more important tasks.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+### Creating a New vNet
+Make sure that you are logged into your personal Azure account, where your cloud security unit VMs are located.
+
+Create a new vNet located in the same resource group you have been using.
+
+Make sure this vNet is located in a new region and not the same region as your other VM's.
 - ...
 - ...
 
