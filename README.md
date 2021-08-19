@@ -85,9 +85,14 @@ You don’t need to install any other software or firewall ports on the client s
 The playbook implements the following tasks:
 
 Install Docker
+
+
 Download Image
+
 Configure container
+
 Create playbook to install container with docker and Filebeat and Metricbeat.
+
 Run playbook to launch the container
 
 ### Creating a New vNet
