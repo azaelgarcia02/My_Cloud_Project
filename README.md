@@ -22,6 +22,11 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available, in addition to restricting and or distributing traffic to the network. 
 
+-A load balancer intelligently distributes traffic from clients across multiple servers without the clients having to understand how many servers are in use or how they are configured. Because the load balancer sits between the clients and the servers it can enhance the user experience by providing additional security, performance, resilience and simplify scaling your website.
+
+What is the advantage of a jump box?
+-A jump box is a secure computer that all admins first connect to before launching any administrative task or use as an origination point to connect to other servers or untrusted environments.
+
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files/data (Filebeat) and system/service metrics (Metricbeat).
 
 The configuration details of each machine may be found below.
@@ -80,9 +85,6 @@ Make sure that you are logged into your personal Azure account, where your cloud
 Create a new vNet located in the same resource group you have been using.
 
 Make sure this vNet is located in a new region and not the same region as your other VM's.
-- ...
-- ...
-
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
