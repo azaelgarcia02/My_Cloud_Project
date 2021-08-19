@@ -71,21 +71,20 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
-Free: Ansible is an open-source tool: Very simple to set up and use: No special coding skills are necessary to use Ansible’s playbooks (more on playbooks later).
+  -Free: Ansible is an open-source tool: Very simple to set up and use: No special coding skills are necessary to use Ansible’s playbooks (more on playbooks later).
 
-Powerful: Ansible lets you model even highly complex IT workflows.
+  -Powerful: Ansible lets you model even highly complex IT workflows.
 
-Flexible: You can orchestrate the entire application environment no matter where it’s deployed. You can also customize it based on your needs.
+  -Flexible: You can orchestrate the entire application environment no matter where it’s deployed. You can also customize it based on your needs.
 
-Agentless: You don’t need to install any other software or firewall ports on the client systems you want to automate. You also don’t have to set up a separate management structure.
+  -Agentless: You don’t need to install any other software or firewall ports on the client systems you want to automate. You also don’t have to set up a separate management structure.
 
-Efficient: Because you don’t need to install any extra software, there’s more room for application resources on your server.
+  -Efficient: Because you don’t need to install any extra software, there’s more room for application resources on your server.
 
 You don’t need to install any other software or firewall ports on the client systems you want to automate. You also don’t have to set up a separate management structure.
 The playbook implements the following tasks:
 
   -Install Docker
-
 
   -Download Image
 
