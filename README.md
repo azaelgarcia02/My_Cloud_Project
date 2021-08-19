@@ -84,16 +84,16 @@ Efficient: Because you don’t need to install any extra software, there’s mor
 You don’t need to install any other software or firewall ports on the client systems you want to automate. You also don’t have to set up a separate management structure.
 The playbook implements the following tasks:
 
-Install Docker
+  -Install Docker
 
 
-Download Image
+  -Download Image
 
-Configure container
+  -Configure container
 
-Create playbook to install container with docker and Filebeat and Metricbeat.
+  -Create playbook to install container with docker and Filebeat and Metricbeat.
 
-Run playbook to launch the container
+  -Run playbook to launch the container
 
 ### Creating a New vNet
 Make sure that you are logged into your personal Azure account, where your cloud security unit VMs are located.
