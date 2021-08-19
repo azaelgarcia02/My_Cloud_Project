@@ -16,11 +16,13 @@ This repository includes code defining the infrastructure below.
 
 ![](Azure_Cloud_Project_Diagram.png)
 
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the filebeat-playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
+
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the "D*mn Vulnerable Web Application"
 
-Load balancing ensures that the application will be highly **available**, in addition to restricting **inbound access** to the network. The load balancer ensures that work to process incoming traffic will be shared by both vulnerable web servers. Access controls will ensure that only authorized users — namely, ourselves — will be able to connect in the first place.
+Load balancing ensures that the application will be highly available, in addition to restricting and or distributing traffic to the network. 
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the **file systems of the VMs on the network**, as well as watch **system metrics**, such as CPU usage; attempted SSH logins; `sudo` escalation failures; etc.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files/data (Filebeat) and system/service metrics (Metricbeat).
 
 The configuration details of each machine may be found below.
 
@@ -61,9 +63,17 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because this allows to automate daily tasks, which in turn helps deliver mor value to the buisness by spending time on more important tasks.
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
+You don’t need to install any other software or firewall ports on the client systems you want to automate. You also don’t have to set up a separate management structure.
 The playbook implements the following tasks:
+
+Install Docker
+Download Image
+Configure container
+Create playbook to install container with docker and Filebeat and Metricbeat.
+Run playbook to launch the container
+
 ### Creating a New vNet
 Make sure that you are logged into your personal Azure account, where your cloud security unit VMs are located.
 
