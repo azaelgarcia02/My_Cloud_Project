@@ -71,8 +71,8 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
-Free: Ansible is an open-source tool.
-Very simple to set up and use: No special coding skills are necessary to use Ansible’s playbooks (more on playbooks later).
+Free: Ansible is an open-source tool: Very simple to set up and use: No special coding skills are necessary to use Ansible’s playbooks (more on playbooks later).
+
 Powerful: Ansible lets you model even highly complex IT workflows.
 
 Flexible: You can orchestrate the entire application environment no matter where it’s deployed. You can also customize it based on your needs.
