@@ -71,6 +71,13 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
+Free: Ansible is an open-source tool.
+Very simple to set up and use: No special coding skills are necessary to use Ansible’s playbooks (more on playbooks later).
+Powerful: Ansible lets you model even highly complex IT workflows.
+Flexible: You can orchestrate the entire application environment no matter where it’s deployed. You can also customize it based on your needs.
+Agentless: You don’t need to install any other software or firewall ports on the client systems you want to automate. You also don’t have to set up a separate management structure.
+Efficient: Because you don’t need to install any extra software, there’s more room for application resources on your server.
+
 You don’t need to install any other software or firewall ports on the client systems you want to automate. You also don’t have to set up a separate management structure.
 The playbook implements the following tasks:
 
@@ -87,12 +94,7 @@ Create a new vNet located in the same resource group you have been using.
 
 Make sure this vNet is located in a new region and not the same region as your other VM's.
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-
-- _TODO_: Update the image file path with the name of your screenshot of docker ps output:
-
-  ![STUDENT TODO: Update image file path](Images/docker_ps_output.png)
-
+Run `docker ps` after successfully configuring the ELK instance.
 
 
 The playbook is duplicated below.
